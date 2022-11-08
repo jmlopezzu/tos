@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+{% include "tos_web/partials/header.html" %}
+
+<div class="dataapp">
+  <div class="container">
+    <div class="row">
+
+      <p class="flow-text"><h5>Step 1:</h5> Go <a href="https://www.webofknowledge.com" target='_blank'>www.webofknowledge.com</a> and sign in. Your Institute should provide the access. If you studied or are studying at Universidad Nacional de Colombia you can access by <a href="http://sinab.unal.edu.co/" target='_blank'>sinab.unal.edu.co</a> - Recursos bibliográficos - Herramientas bibliográficas - bottom next - select web of science. Finally, you need to write your email and password.</p>
+      <img class="responsive-img" src="{% static 'img/use/step1.jpg' %}">
+
+      <div class="col s12 divider"></div>
+      <p class="flow-text"><h5>Step 2:</h5> Change the type of data base from “All Databases” to “Web of ScienceTM Core Collection”</p>
+      <img class="responsive-img" src="{% static 'img/use/step2.jpg' %}">
+
+
+      <div class="col s12 divider"></div>
+      <p class="flow-text"><h5>Step 3:</h5> Write the keywords of your research topic. The results should be from 100 to 500 in order to identify the “Tree of Science”.</p>
+      <img class="responsive-img" src="{% static 'img/use/step3.jpg' %}">
+
+
+      <div class="col s12 divider"></div>
+      <p class="flow-text"><h5>Step 4:</h5> Download the registers. Click in the task next to “save to EndNote online” and select “save to Other File Formats”. Write the records you want to select. In number of reccors specify from 1 to the total number of registers you’ve got, In Record Content select “Full record and cited  references” also in file format select “Plain Text” . Now, you will have a txt file called savedrecs.</p>
+      <img class="responsive-img" src="{% static 'img/use/step5.jpg' %}">
+
+      <div class="col s12 divider"></div>
+      <p class="flow-text"><h5>Step 5:</h5> Upload the saverecs.txt file to <a href="http://tos.manizales.unal.edu.co">tos.manizales.unal.edu.co</a> to generate your Tree of Science!</p>
+      <img class="responsive-img" src="{% static 'img/use/step6.jpg' %}">
+
+
+    </div>
+  </div>
+</div>
+
+{% include "tos_web/partials/footer.html" %}
+
+{% endblock %}

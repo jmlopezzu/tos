@@ -1,0 +1,48 @@
+{% load staticfiles %}
+
+
+<header>
+  <nav style="left:0" class="top-nav amber lighten-5 bar-down">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a class="brand-logo center page-title black-text" href="{% url 'landing' %}">
+          <span class="black-text text-darken-5 hide-on-med-and-up">ToS <span id="navusername"> {{ user.firstname }}</span></span>
+          <span class="black-text text-darken-5 hide-on-small-only">Tree of Science </span>
+        </a>
+        <ul id="nav-mobile" class="black-text text-darken-5 right hide-on-med-and-down">
+        <li><span id="" class="right"><i style="" class="material-icons left">face</i>{{ user.firstname }}</span></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <a class="button-collapse top-nav full hide-on-large-only" href="#"  data-activates="nav-movile">
+      <i class="black-text text-darken-5 material-icons" style="line-height:inherit;">menu</i>
+    </a>
+  </div>
+  <ul id="nav-movile" class="side-nav fixed">
+    <li class="logo">
+      <a id="logo-container" class="brand-logo center" href="{% url 'landing' %}">
+        <img src="{% static 'img/logo-horizontal.png' %}" alt="ToS"/>
+      </a>
+    </li>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'queries-create' %}">New search</a></li>
+    <li><a href="{% url 'queries' %}">Uploads</a></li>
+    <div class="divider"></div>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="https://www.youtube.com/channel/UCV4E8Frjgw5c7Sb3sJ7tBJg" target="_blank">Youtube channel</a></li>
+    <li><a href="{% url 'contact' %}">Contact us</a></li>
+    <li><a href="{% url 'invitations' %}">Invite your colleages</a></li>
+    <div class="divider"></div>
+    <li><form class="row" method="post" action="{% url 'logout' %}">
+      {% csrf_token %}
+        <button style="text-align:left;text-transform: capitalize;" class="col s12 btn-flat" type="submit">
+          Log out
+        </button>
+    </form></li>
+    <li id="cite"><h5>Please Cite</h5><p style="font-size:12px">Robledo Giraldo, S., Osorio Zuluaga, G. A., & López Espinosa, C. (2014). Networking en pequeña empresa: una revisión bibliográfica utilizando la teoría de grafos. Revista Vinculos, 11(2), 6–16.</p><a class="waves-effect waves-teal btn-flat" href="http://revistas.udistrital.edu.co/ojs/index.php/vinculos/article/download/9664/10837" download="paper.pdf"><h7>DownLoad</h7><i class="material-icons right">file_download</i></a>
+    </li>
+  </ul>
+
+</header>

@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+{% include "tos_web/partials/header.html" %}
+
+<div class="dataapp container">
+  <div class="row">
+    <div class="col s12">
+      <h3>About Tree of Science</h3>
+      <blockquote class="flow-text">Search less, research more!</blockquote>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col sm12">
+      <p class="flow-text">
+
+
+        Tree of Science (ToS) is a Web based tool that uses sophisticated network algorithms to optimize the search and selection of published articles. It is an especially useful tool for those interested in tracking how a particular topic or paper is interconnected over time with others.  ToS is likely to be useful for both dedicated researchers and students working on short-term research projects.
+
+      </p>
+    </div>
+
+    <div class="col s12 m6">
+      <div class="card large">
+        <div class="card-image">
+          <img src="{% static 'img/about/Sebas_Vivi.JPG' %}">
+          <span class="card-title">Sebastian Robledo and Martha Zuluaga</span>
+        </div>
+        <div class="card-content">
+          <p>We are  Ph.D. students at National and Caldas University, we began looking for alternatives to facilitate researchers in their literature searches and proposing a methodology to make it easier.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <div class="card large">
+        <div class="card-image">
+          <img src="{% static 'img/about/Oscar.JPG' %}">
+          <span class="card-title">Oscar David Arbeláez</span>
+        </div>
+        <div class="card-content">
+          <p>I am researcher / data analyst / programer, with background in physics.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <div class="card large">
+        <div class="card-image">
+          <img src="{% static 'img/about/Mario.JPG' %}">
+          <span class="card-title">Mario Reyes Ojeda</span>
+        </div>
+        <div class="card-content">
+          <p>I'm finishing my career as computer systems manager, I work as a software developer in web technologies and high-performance technologies for data analysis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <div class="card large">
+        <div class="card-image">
+          <img src="{% static 'img/about/Mateo.JPG' %}">
+          <span class="card-title">Mateo Salazar Marulanda</span>
+        </div>
+        <div class="card-content">
+          <p>Computer Systems Administrator of the National University of Colombia Manizales 2015 videogame developer,コンピュータ・システム管理者 ,ゲーム開発者 #gamedev #javascript #Python #iOS #DataAnalytics @MateoSalazarM.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <div class="card large">
+        <div class="card-image">
+          <img src="{% static 'img/about/Daniel.JPG' %}">
+          <span class="card-title">Daniel Valencia</span>
+        </div>
+        <div class="card-content">
+          <p>I am student of Management Information Systems of the National University and I support the design of algorithms for generating the tree.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <div class="card large">
+        <div class="card-image">
+          <img src="{% static 'img/about/JuanCamilo.JPG' %}">
+          <span class="card-title">Juan Camilo Zuluaga Gómez</span>
+        </div>
+        <div class="card-content">
+          <p>I am student of last semester of Management Information Systems of the National University and I supported the design of algorithms for generating the tree and now I work as Community Manager.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col sm12">
+      <blockquote>
+        Robledo Giraldo, S., Osorio Zuluaga, G. A., López Espinosa, C. (2014).
+        Networking en pequeña empresa: una revisión bibliográfica utilizando la
+        teoría de grafos. Revista Vinculos, 11(2), 6–16.
+      </blockquote>
+
+      <blockquote>
+        Robledo-Giraldo, S., Duque-Méndez, N. D., y Zuluaga-Giraldo, J. I. (2013).
+        Difusión de productos a través de redes sociales: una revisión bibliográfica
+        utilizando la teoría de grafos. Revista Respuestas, 18(2), 27–41
+      </blockquote>
+    </div>
+
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+{% include "tos_web/partials/footer.html" %}
+
+{% endblock %}

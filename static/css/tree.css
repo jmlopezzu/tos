@@ -1,0 +1,27 @@
+.right.disabled{
+  color:grey;
+  pointer-event:none;
+  cursor: default;
+}
+
+.quit-in-list{
+  color:black;
+}
+
+.tabs{
+  background: none;
+}
+
+#treetab{
+  margin-top: 40px;
+}
+
+.tabs .tab a{
+  color:#25AA00;
+}
+.tabs .tab a:hover{
+  color:#82A876;
+}
+.tabs .indicator{
+  background-color: #25AA00;
+}

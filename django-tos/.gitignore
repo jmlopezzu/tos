@@ -1,0 +1,33 @@
+# compiled python files
+*__pycache__
+*.pyc
+*.so
+*.o
+
+# swap files
+\#*
+*~
+*#
+
+# Ide files
+.idea
+.sublime*
+.ropeproject
+*.swp
+.vimrc
+
+# auxiliar files
+.coverage
+tags
+
+# storage files
+public/media
+*.sqlite3
+*.sqlite
+
+# Config files
+treeofscience/settings/production.py
+
+# Built doc files
+docs/_build
+docs/_static

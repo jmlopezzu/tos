@@ -1,0 +1,14 @@
+Jinja2==2.7.3
+MarkupSafe==0.23
+Pygments==2.0.1
+Sphinx==1.2.3
+cov-core==1.15.0
+coverage==3.7.1
+docutils==0.12
+jellyfish==0.3.3
+py==1.4.26
+pytest==2.6.4
+pytest-cov==1.8.1
+python-igraph==0.7
+requests==2.5.1
+sphinx-rtd-theme==0.1.6

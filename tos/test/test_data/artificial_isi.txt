@@ -1,0 +1,72 @@
+FN Thomson Reuters Web of Science™
+VR 1.0
+PT J
+AU Pereira, SI
+   Figueiredo, PI
+   Barros, AS
+   Dias, MC
+   Santos, C
+   Duarte, IF
+   Gil, AM
+AF Pereira, Sara I.
+   Figueiredo, Patricia I.
+   Barros, Antonio S.
+   Dias, Maria C.
+   Santos, Conceicao
+   Duarte, Iola F.
+   Gil, Ana M.
+TI Changes in the metabolome of lettuce leaves due to exposure to mancozeb
+   pesticide
+SO FOOD CHEMISTRY
+LA English
+DT Article
+DE Lettuce; Mancozeb; Metabolomics; High resolution magic angle spinning
+   (HRMAS); Nuclear magnetic resonance (NMR); Multivariate analysis;
+   Pesticide
+ID LACTUCA-SATIVA L.; HIGH-FIELD NMR; FUNGICIDE MANCOZEB; FOOD ANALYSIS;
+   FRUIT; QUALITY; TOMATO; PROFILE; GRAPES; PLANTS
+AB This paper describes a proton high resolution magic angle spinning (HRMAS) nuclear magnetic resonance (NMR) metabolomic study of lettuce (Lactuca sativa L.) leaves to characterise metabolic adaptations during leaf growth and exposure to mancozeb. Metabolite variations were identified through multivariate analysis and checked through spectral integration. Lettuce growth was accompanied by activation of energetic metabolism, preferential glucose use and changes in amino acids, phospholipids, ascorbate, nucleotides and nicotinatelnicotinamide. Phenylalanine and polyphenolic variations suggested higher oxidative stress at later growth stages. Exposure to mancozeb induced changes in amino acids, fumarate and malate, suggesting Krebs cycle up-regulation. In tandem disturbances in sugar, phospholipid, nucleotide and nicotinate/nicotinamide metabolism were noted. Additional changes in phenylalanine, dehydroascorbate, tartrate and formate were consistent with a higher demand for anti-oxidant defence mechanisms. Overall, lettuce exposure to mancozeb was shown to have a significant impact on plant metabolism, with mature leaves tending to be more extensively affected than younger leaves. (C) 2014 Elsevier Ltd. All rights reserved.
+C1 [Pereira, Sara I.; Figueiredo, Patricia I.; Duarte, Iola F.; Gil, Ana M.] Univ Aveiro, Dept Chem, CICECO, P-3810193 Aveiro, Portugal.
+   [Figueiredo, Patricia I.; Dias, Maria C.; Santos, Conceicao] Univ Aveiro, Dept Biology, CESAM, P-3810193 Aveiro, Portugal.
+   [Barros, Antonio S.] Univ Aveiro, Dept Chem, QOPNA, P-3810193 Aveiro, Portugal.
+RP Gil, AM (reprint author), Univ Aveiro, Dept Chem, CICECO, Campus Santiago, P-3810193 Aveiro, Portugal.
+EM agil@ua.pt
+FU European Regional Development Fund (FEDER) through the Competitive
+   Factors Thematic Operational Programme (COMPETE); Foundation for Science
+   and Technology-FCT, Portugal [PTDC/SAU-MET/111398/2009,
+   PEst-C/CTM/LA0011/2013, SFRH/BPD/41700/2007]; Portuguese National NMR
+   Network (RNRMN); FCT funds
+FX Funding is acknowledged from the European Regional Development Fund
+   (FEDER) through the Competitive Factors Thematic Operational Programme
+   (COMPETE) and the Foundation for Science and Technology-FCT, Portugal
+   (PTDC/SAU-MET/111398/2009, PEst-C/CTM/LA0011/2013, SFRH/BPD/41700/2007).
+   The Portuguese National NMR Network (RNRMN), supported with FCT funds is
+   also acknowledged, particularly the access to the NMR 800 MHz system at
+   CERMAX where the spectra were acquired. The authors are also grateful to
+   Bruker BioSpin, Germany, for providing access to spectral databases and
+   to Ines Lamego for aiding with spectral acquisition.
+CR Abu-Reidah IM, 2013, J CHROMATOGR A, V1313, P212, DOI 10.1016/j.chroma.2013.07.020
+NR 29
+TC 0
+Z9 0
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0308-8146
+EI 1873-7072
+J9 FOOD CHEM
+JI Food Chem.
+PD JUL 1
+PY 2014
+VL 154
+BP 291
+EP 298
+DI 10.1016/j.foodchem.2014.01.019
+PG 8
+WC Chemistry, Applied; Food Science & Technology; Nutrition & Dietetics
+SC Chemistry; Food Science & Technology; Nutrition & Dietetics
+GA AC3OJ
+UT WOS:000332430800039
+ER
+
+EF

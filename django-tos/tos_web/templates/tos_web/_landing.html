@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block extrastyles %}
+<link rel="stylesheet" type="text/css" href="{% static 'lib/jquery.fullPage.css' %}">
+{% endblock extrastyles %}
+
+
+
+{% block content %}
+
+{% include "tos_web/partials/navbar.html" %}
+<div id="fullpage" style="position:absolute;">
+
+  <div class="section valign">
+    <div id="landingbackground"></div>
+
+    <div class="homepage home1 row">
+      <div class="data-page caption center-align col s8 offset-s2 ">
+        <h3 class="grey-text text-lighten-5" style="margin-bottom: 10%;">Search less, research more!</h3>
+        <h5 class="grey-text text-lighten-4">Tree of Science (ToS) is a free web base tool for science articles selection</h5>
+        <h5 class="grey-text text-lighten-4">Tos was created to enable researchers seeking scientific papers decreasing time and increasing the accuracy of the results</h5>
+        <h5 class="grey-text text-lighten-4">For more info and training, check out our <a href="https://www.youtube.com/channel/UCV4E8Frjgw5c7Sb3sJ7tBJg">youtube channel</a></h5>
+        <h3 class="grey-text text-lighten-4" style="position: relative;top:35%;">You just need an invitation!</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="section valign">
+
+    <div class="homepage home2 row">
+      <img id="logohome2" class="responsive-img" src="{% static 'img/logo2.png' %}">
+      <div class="data-page caption right-align col s6 offset-s5">
+        <h3 class="grey-text text-darken-4">What is ToS?</h3>
+        <h5 class="grey-text text-darken-3">One of ToS pillars is simplicity base on organic concept. in this way, ToS display the information of the papers in a tree shape:</h5>
+        <h5 class="grey-text text-darken-3 caption right-align">Leaves are the recent articles.</h5>
+        <h5 class="grey-text text-darken-3 caption right-align">Trunk are the articles that give structure.</h5>
+        <h5 class="grey-text text-darken-3 caption right-align">Root are the seminal articles.</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="section valign">
+    <div class="homepage home3">
+      <div class="data-page caption center">
+        <h3 class="grey-text text-darken-4">Motivated By:</h3>
+        <div class="power-by valign caption center-align row">
+          <a class="col s4" href="http://www.manizales.unal.edu.co" target="_blank">
+            <img class="responsive-img" src="{% static 'img/logo/UNLATERAL.png' %}">
+          </a>
+          <a class="col s4" href="http://gta.manizales.unal.edu.co/gaia/" target="_blank"><img class="responsive-img" src="{% static 'img/logo/GAIA.png' %}"></a>
+          <a class="col s4" href=""><img class="responsive-img" src="{% static 'img/logo/dvida.png' %}"></a>
+          <a class="col s4" href="http://www.investigacion.unal.edu.co" target="_blank"><img class="responsive-img" src="{% static 'img/logo/VRI.png' %}"></a>
+          <a class="col s4" href="http://www.manizales.unal.edu.co/index.php/directorio-institucional/506-PARQUE-DE-INNOVACION-EMPRESARIAL" target="_blank"><img class="responsive-img" src="{% static 'img/logo/Parque.png' %}"></a>
+          <a class="col s4" href="http://www.sinab.unal.edu.co/" target="_blank"><img class="responsive-img" src="{% static 'img/logo/sinab.png' %}"></a>
+          <a class="col s8" href="http://www.colciencias.gov.co/" target="_blank"><img class="responsive-img" src="{% static 'img/logo/colciencias.png' %}"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<ul id="myMenu" class="indicators">
+  <li data-menuanchor="p1" class="indicator-item active"><a onclick="gotopage('p1')"><i class="material-icons">lens</i></a></li>
+  <li data-menuanchor="p2" class="indicator-item"><a onclick="gotopage('p2')"><i class="material-icons">lens</i></a></li>
+  <li data-menuanchor="p3" class="indicator-item"><a onclick="gotopage('p3')"><i class="material-icons">lens</i></a></li>
+</ul>
+
+
+{% block extrascripts %}
+<script src="{% static 'lib/jquery.fullPage.min.js' %}"></script>
+<script src="{% static 'js/fullpage.js' %}"></script>
+{% endblock extrascripts %}
+
+{% endblock content %}

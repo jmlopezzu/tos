@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row allpage valign-wrapper">
+  <div class="col s12 m8 l6 offset-m2 offset-l3 valign">
+
+    <h4>Sign up</h4>
+
+    <form class="col s12" method="post" action="{% url 'signup' %}">
+
+      {% include "tos_web/partials/form_input.html" %}
+
+      <div class="row center">
+        <button class="waves-effect waves-light btn-large" type="submit">
+          Register <i class="material-icons left">create</i>
+        </button>
+      </div>
+    </form>
+  </div>
+  
+  <div class="col s12 m8 l6 offset-m2 offset-l3 valign">
+        <h6 class="black-text text-lighten-5" style="margin-bottom: 10%;">Protección de datos personales</h6>
+        <h6 class="gray-text text-lighten-4">La Universidad Nacional de Colombia, como responsable del tratamiento de información</h6>
+        <h6 class="gray-text text-lighten-4">de datos personales, informa que los datos suministrados serán tratados de acuerdo </h6>
+		    <h6 class="gray-text text-lighten-4">con la ley 1581 de 2012 y bajo nuestra Política de Datos Personales, la cual</h6>
+        <h6 class="gray-text text-lighten-4">podrá consultar en <a href="www.unal.edu.co">Web UNAL</a></h6>
+		    <h6 class="gray-text text-lighten-4">DE ACUERDO CON LA LEY 1581 DE 2012 DE PROTECCIÓN DE DATOS PERSONALES, HE LEÍDO,</h6>
+		    <h6 class="gray-text text-lighten-4">ENTENDIDO Y ACEPTO, LOS TÉRMINOS DESCRITOS EN LA POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES</h6>
+  </div>
+
+</div>
+
+
+
+{% endblock content %}

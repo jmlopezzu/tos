@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="allpage row valign-wrapper">
+  <div class="col s12 m8 l6 offset-m2 offset-l3 valign">
+    <h4>Log in</h4>
+
+    <form class="col s12" method="post" action="{% url 'login' %}">
+
+      {% include "tos_web/partials/form_input.html" %}
+
+      <div class="row center">
+        <button class="waves-effect waves-light btn-large" type="submit">
+          Log in <i class="material-icons right">send</i>
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+{% endblock content %}

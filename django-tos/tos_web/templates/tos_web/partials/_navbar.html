@@ -1,0 +1,47 @@
+{% load staticfiles %}
+
+<nav class="navbar-landing amber lighten-5 bar-down">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">
+        <span class="black-text text-darken-5 hide-on-med-and-up"><img id="logoText" src="{% static 'img/logo.png' %}">ToS</span>
+        <span class="black-text text-darken-5 hide-on-small-only"><img id="logoText" src="{% static 'img/logo.png' %}">Tree of Science</span>
+      </a>
+      <a class="black-text text-darken-5 button-collapse" href="#" data-activates="side-nav">
+        <i class="material-icons">menu</i>
+      </a>
+      {% if not user.is_authenticated %}
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="black-text text-darken-5" href="https://www.youtube.com/channel/UCV4E8Frjgw5c7Sb3sJ7tBJg" target="_blank">youtube</a></li>
+        <li><a class="black-text text-darken-5" href="{% url 'login' %}">Log in</a></li>
+        <li><a class="black-text text-darken-5" href="{% url 'signup' %}">Sign up</a></li>
+        <li><a class="black-text text-darken-5" href="{% url 'contact' %}">Contact us</a></li>
+        <li><a href="http://www.manizales.unal.edu.co"><img style="height: 36px;width: auto;vertical-align: middle;" src="{% static 'img/logo/UNLATERAL.png' %}"></a>
+        </ul>
+        <ul id="side-nav" class="side-nav">
+          <li style="height: 64px;margin-top: 5px;" class="logo">
+            <a id="logo-container" class="brand-logo center" href="{% url 'landing' %}">
+              <img src="{% static 'img/logo.png' %}" alt="ToS"/>
+            </a>
+          </li>
+          <div class="divider"></div>
+          <li><a href="https://www.youtube.com/channel/UCV4E8Frjgw5c7Sb3sJ7tBJg" target="_blank">youtube</a></li>
+          <li><a href="{% url 'login' %}">Log in</a></li>
+          <li><a href="{% url 'signup' %}">Sign up</a></li>
+          <li><a href="{% url 'contact' %}">Contact us</a></li>
+          <div class="divider"></div>
+          <li><a href="http://www.manizales.unal.edu.co" target="_blank"><img style="height: 64px;width: auto;" class="responsive-img" src="{% static 'img/logo/UNLATERAL.png' %}"></a></li>
+        </ul>
+        {% else %}
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="black-text text-darken-5" href="{% url 'logout' %}">Log out</a></li>
+          <li><a class="black-text text-darken-5" href="{% url 'contact' %}">Contact us</a></li>
+        </ul>
+        <ul id="side-nav" class="side-nav">
+          <li><a href="{% url 'logout' %}">Log out</a></li>
+          <li><a href="{% url 'contact' %}">Contact us</a></li>
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </nav>

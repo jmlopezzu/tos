@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% include "tos_web/partials/header.html" %}
+
+<div class="appdata">
+  <div class="container">
+    <div class="querycreate row">
+      <div class="col s12 m8 offset-m2">
+        <h4>Delete Query</h4>
+        <form method="post">{% csrf_token %}
+            Are you sure you want to delete the query about "{{ query.description }}" ?
+            <input type="submit" value="Delete" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

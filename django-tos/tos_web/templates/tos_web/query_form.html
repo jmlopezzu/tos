@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% include "tos_web/partials/header.html" %}
+
+<div class="appdata">
+  <div class="container">
+    <div class="querycreate row">
+      <div class="col s12 m8 offset-m2">
+        <h4>New science file</h4>
+        <form
+           class="col s12" method="post"
+                           action="{% url 'queries-create' %}"
+                           enctype="multipart/form-data">
+
+          {% include "tos_web/partials/form_input.html" %}
+
+          <div class="row right">
+            <button class="waves-effect waves-light btn-large" type="submit">
+              Upload <i class="material-icons left">cloud_upload</i>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

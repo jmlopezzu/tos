@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #F8F1E6;
+            font-family: Tahoma, sans-serif;  
+        }        
+        h2 {
+            color:#7F3600;
+        }
+        .mail {
+            width: 450px;
+            height: 340px;
+        }
+        h3 {
+            color: #235F13;
+        }
+    </style>
+</head>
+<body>
+    <div class="mail">
+        <div align="center">
+            <img src="{{img}}" width="270px" height="125px">
+        </div>
+        <h2><b>Verification</b></h2>
+        <h5>Hi {{firstname}},</h5>
+        <p>As requested by you, here is a link to verify your account:</p>
+        <a href="{{ verify_url }}">{{ verify_url }}</a>
+        <p>If the link above is not clickable, please copy and paste it in your browser.</p>
+    </div>
+    <h3><b>Team ToS</b></h3>
+</body>
+</html>

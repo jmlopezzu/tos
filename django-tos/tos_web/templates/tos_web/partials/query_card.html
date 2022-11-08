@@ -1,0 +1,62 @@
+{% load tos_extra %}
+<div class="card-panel grey lighten-5 z-depth-1">
+  <div class="row valign-wrapper">
+    <div id="Q{{ query.pk }}" class="col s1">
+      {% if query.ready %}
+      <a class="btn-floating waves waves-teal"
+      href="{% url 'queries-detail' query.pk %}">
+      <i class="material-icons">play_arrow</i>
+    </a>
+    {% else %}
+    {# this is a spinner for the queries that arent ready yet #}
+    <div class="preloader-wrapper small active">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"> </div>
+        </div>
+      </div>
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"> </div>
+        </div>
+      </div>
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"> </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  <div class="col s10 offset-s1 m11">
+    <span class="black-text truncate">
+      {{ query.description }}
+    </span>
+  </div>
+  <div type="date" class"">
+    {{ query.created|date:"D d M Y"}}
+  </div>
+  {% if query.ready %}
+    <a id="csvQ{{ query.pk }}" class="rigth" href="{% url 'queries-export' query.pk %}">
+      <i class="material-icons">file_download</i>
+    </a>
+    {% endif %}
+    <a class="rigth modal-trigger" href="#modal{{ query.pk }}">
+      <i class="material-icons">cancel</i>
+    </a>
+</div>
+</div>
+
+ <div id="modal{{ query.pk }}" class="modal">
+    <div class="modal-content">
+      <h4>¿ Are you sure ?</h4>
+      <p>You want to delete the query about <b>"{{ query.description }}"</b>.<br>
+      If unsure cancel this action.<br>This action cannot be undone</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+      <form method="post" action="{% url 'queries-delete' query.pk %}">{% csrf_token %}
+          <button type="submit" value="Delete" class=" modal-action modal-close waves-effect waves-green btn-flat">Yes I'm sure</button>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,35 @@
+{# when the form is not that important and you want to get some style #}
+
+{% load tos_extra %}
+
+{% csrf_token %}
+{{ form.non_field_errors }}
+
+{% for field in form %}
+{{ field.errors }}
+<div class="row">
+  {% if field|is_textarea %}
+  <div class="input-field">
+    <textarea class="materialize-textarea"
+              id="{{ field.id_for_label }}"
+              name="{{ field.html_name }}">{{ field.value|default_if_none:"" }}</textarea>
+    {{ field.label_tag }}
+  </div>
+  {% elif field|is_file %}
+  <div class="file-field input-field">
+    <div class="btn">
+      <span>File</span>
+      <input name="{{ field.html_name }}" type="file" />
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text"/>
+    </div>
+  </div>
+  {% else %}
+  <div class="input-field">
+    {{ field.label_tag }}
+    {{ field }}
+  </div>
+  {% endif %}
+</div>
+{% endfor %}

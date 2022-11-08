@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load tos_extra %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+{% include "tos_web/partials/header.html" %}
+
+<div class="dataapp">
+  <div class="container">
+    {% for query in object_list %}
+    {% include "tos_web/partials/query_card.html" %}
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}

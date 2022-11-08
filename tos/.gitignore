@@ -1,0 +1,27 @@
+# Compiled python
+__pycache__
+*.pyc
+
+# Ipython ckeckpoints
+.ipynb_checkpoints/
+
+# Coverage reports
+.coverage
+
+# Compiled docs
+docs/build
+build/
+
+# Eggs
+*.egg-info
+*.egg
+
+# Swap and temporary files
+*.swp
+~*
+*~
+
+# Project files from IDEs
+.ropeproject
+tags
+

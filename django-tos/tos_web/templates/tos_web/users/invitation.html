@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="allpage row valign-wrapper">
+  <div class="col s12 m8 l6 offset-m2 offset-l3 valign">
+
+    <h2>Invite your colleagues</h2>
+
+    <p class="flow-text">
+    <strong>Tree of science</strong> registration is working with an invitation
+    basis all your colleagues require an invitation to come in.
+    </p>
+
+    <form class="col s12" method="post" action="{% url 'invitations' %}">
+
+      {% csrf_token %}
+
+      {{ form.non_field_errors }}
+
+      <div class="row">
+        {{ form.email.errors }}
+        <div class="input-field">
+          {{ form.email.label_tag }}
+          <input class="validate"
+                 id="{{ form.email.id_for_label }}"
+                 name="{{ form.email.html_name }}"
+                 value="{{ form.email.value|default_if_none:"" }}"
+                 type="email" />
+        </div>
+      </div>
+
+      <div class="row center">
+        <button class="waves-effect waves-light btn-large" type="submit">
+          Send invitation <i class="material-icons left">mail</i>
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+{% endblock content %}
